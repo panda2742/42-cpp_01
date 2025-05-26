@@ -10,12 +10,12 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME	:=	sed_for_losers
+NAME	:=	dumb_sed
 
 override SOURCE_DIR		:=	src/
 override INCLUDE_DIR	:=	include/
-INCLUDES				:=	
-SOURCES					:=	main
+INCLUDES				:=	DumbSed dumb_sed_utils
+SOURCES					:=	DumbSed main
 override SOURCE			:=	$(addprefix $(SOURCE_DIR), $(addsuffix .cpp, $(SOURCES)))
 override INCLUDE		:=	$(addprefix $(INCLUDE_DIR), $(addsuffix .hpp, $(INCLUDES)))
 
