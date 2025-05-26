@@ -12,7 +12,7 @@
 
 NAME	:=	ptr_and_ref
 
-override SOURCE_DIR		:=	./
+override SOURCE_DIR		:=	src/
 override INCLUDE_DIR	:=	./
 INCLUDES				:=	
 SOURCES					:=	main

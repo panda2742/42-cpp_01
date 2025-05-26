@@ -12,10 +12,10 @@
 
 NAME	:=	sed_for_losers
 
-override SOURCE_DIR		:=	./
-override INCLUDE_DIR	:=	./
-INCLUDES				:=	HumanA HumanB Weapon
-SOURCES					:=	main HumanA HumanB Weapon
+override SOURCE_DIR		:=	src/
+override INCLUDE_DIR	:=	include/
+INCLUDES				:=	
+SOURCES					:=	main
 override SOURCE			:=	$(addprefix $(SOURCE_DIR), $(addsuffix .cpp, $(SOURCES)))
 override INCLUDE		:=	$(addprefix $(INCLUDE_DIR), $(addsuffix .hpp, $(INCLUDES)))
 

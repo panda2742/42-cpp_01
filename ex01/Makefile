@@ -12,8 +12,8 @@
 
 NAME	:=	brainz
 
-override SOURCE_DIR		:=	./
-override INCLUDE_DIR	:=	./
+override SOURCE_DIR		:=	src/
+override INCLUDE_DIR	:=	include/
 INCLUDES				:=	Zombie
 SOURCES					:=	main Zombie zombieHorde
 override SOURCE			:=	$(addprefix $(SOURCE_DIR), $(addsuffix .cpp, $(SOURCES)))
