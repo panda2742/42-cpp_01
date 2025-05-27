@@ -16,7 +16,7 @@ DumbSed::~DumbSed() {}
 bool DumbSed::openFiles() {
 	_infile.open(_filename.c_str());
 	if (!_infile) {
-		std::cerr << BRED "Error while opening infile: ";
+		std::cout << BRED "Error while opening infile: ";
 		perror("error");
 		return false;
 	}
@@ -24,7 +24,7 @@ bool DumbSed::openFiles() {
 	_outfile.open(_outFilename.c_str());
 	if (!_outfile) {
 		_infile.close();
-		std::cerr << BRED "Error while opening outfile: ";
+		std::cout << BRED "Error while opening outfile: ";
 		perror("error");
 		return false;
 	}

@@ -35,7 +35,7 @@ void Harl::complain(std::string level) {
 			(this->*handlers[3])();
 			break;
 		default:
-			std::cerr << BRED "Unknown level of complaint." << std::endl;
+			std::cout << BRED "Unknown level of complaint." << std::endl;
 	}
 }
 

@@ -21,7 +21,7 @@ void Harl::complain(std::string level) {
 			return (this->*handlers[i])();
 	}
 
-	std::cerr << BRED "Unknown level of complaint." << std::endl;
+	std::cout << BRED "Unknown level of complaint." << std::endl;
 }
 
 // Private methods
