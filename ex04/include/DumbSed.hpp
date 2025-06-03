@@ -4,7 +4,8 @@
 # include <fstream>
 # include <iostream>
 
-class DumbSed {
+class DumbSed
+{
 	public:
 	// Constructors & Destructors
 	DumbSed(const std::string &filename, const std::string &s1, const std::string &s2);

@@ -3,7 +3,8 @@
 
 # include "Weapon.hpp"
 
-class HumanA {
+class HumanA
+{
 	public:
 	// Constructors & Destructors
 	HumanA(const std::string &name, Weapon &weapon);

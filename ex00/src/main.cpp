@@ -3,12 +3,14 @@
 Zombie *newZombie(std::string name);
 void randomChump(std::string name);
 
-int main() {
+int main()
+{
 	static std::string	names[4] = {"Alvin", "Fred", "John", "Kevin"};
 
 	std::cout << "---------- [HEAP ALLOCATED] ----------" << std::endl;
 	// Let's create some zombies we can delete, allocated in the heap
-	for (int i = 0; i < 4; i++) {
+	for (int i = 0; i < 4; i++)
+	{
 		Zombie *generatedZombie = newZombie(names[i % 4]);
 		// We announce it
 		generatedZombie->announce();

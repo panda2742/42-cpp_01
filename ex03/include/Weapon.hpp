@@ -3,7 +3,8 @@
 
 # include <iostream>
 
-class Weapon {
+class Weapon
+{
 	public:
 	// Constructors & Destructors
 	Weapon(const std::string &type);

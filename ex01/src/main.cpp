@@ -3,7 +3,8 @@
 
 Zombie *zombieHorde(int N, std::string name);
 
-int main() {
+int main()
+{
 	int			hordeSize;
 	std::string	name;
 
@@ -17,7 +18,8 @@ int main() {
 
 	Zombie *horde = zombieHorde(hordeSize, name);
 
-	for (int i = 0; i < hordeSize; i++) {
+	for (int i = 0; i < hordeSize; i++)
+	{
 		std::cout << BMAGENTA "[" << i << "] Zombie " << &horde[i]
 				<< ":" RESET << std::endl;
 		horde[i].announce();

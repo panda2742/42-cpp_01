@@ -3,7 +3,8 @@
 
 # include <iostream>
 
-class Harl {
+class Harl
+{
 	public:
 	// Constructors & Destructors
 	Harl();

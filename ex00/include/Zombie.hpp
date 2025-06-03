@@ -3,7 +3,8 @@
 
 # include <iostream>
 
-class Zombie {
+class Zombie
+{
 	public:
 	// Constructors & Destructors
 	Zombie();
