@@ -3,19 +3,17 @@
 
 Zombie *zombieHorde(int N, std::string name);
 
-int main()
+int main(int argc, char **argv)
 {
-	int			hordeSize;
-	std::string	name;
-
-	std::cout << "How many zombies do you want? ";
-	std::cin >> hordeSize;
-	hordeSize = abs(hordeSize);
-	std::cout << "What's their name? ";
-	std::cin >> name;
+	if (argc != 3)
+	{
+		std::cout << "Expecting three arguments." << std::endl;
+		return 1;
+	}
+	int			hordeSize = atoi(argv[1]);
+	std::string	name = argv[2];
 
 	std::cout << std::endl << "Creating the horde..." << std::endl << std::endl;
-
 	Zombie *horde = zombieHorde(hordeSize, name);
 
 	for (int i = 0; i < hordeSize; i++)
@@ -26,8 +24,7 @@ int main()
 	}
 
 	std::cout << std::endl << "Killing the horde..." << std::endl << std::endl;
-
 	delete[] horde;
 
-	return (0);
+	return 0;
 }
