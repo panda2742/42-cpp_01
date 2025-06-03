@@ -1,1 +1,6 @@
-.vscode
+*
+!ex0*
+!include
+!src
+!Makefile
+!.gitignore

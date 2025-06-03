@@ -13,6 +13,11 @@ HumanB::~HumanB()
 // Methods
 void HumanB::attack()
 const {
+	if (_weapon == NULL)
+	{
+		std::cout << getName() << " has no weapon to attack with!" << std::endl;
+		return;
+	}
 	std::cout << getName() << " attacks with their " << getWeapon()->getType() << std::endl;
 }
 
