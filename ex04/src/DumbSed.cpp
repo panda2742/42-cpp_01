@@ -38,8 +38,14 @@ bool DumbSed::openFiles()
 	return true;
 }
 
-void DumbSed::execute()
+void DumbSed::execute(void)
 {
+	if (_s1.length() == 0)
+	{
+		std::cout << "\e[38;2;255;0;0mString _s1 is empty.\e[0m" << std::endl;
+		return;
+	}
+
 	std::string	line;
 
 	while (std::getline(_infile, line))
