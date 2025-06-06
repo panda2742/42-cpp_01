@@ -16,6 +16,9 @@ int main(int argc, char **argv)
 	std::cout << std::endl << "Creating the horde..." << std::endl << std::endl;
 	Zombie *horde = zombieHorde(hordeSize, name);
 
+	if (!horde)
+		return 1;
+
 	for (int i = 0; i < hordeSize; i++)
 	{
 		std::cout << BMAGENTA "[" << i << "] Zombie " << &horde[i]

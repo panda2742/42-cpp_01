@@ -6,7 +6,9 @@ Zombie::Zombie()
 {}
 
 Zombie::~Zombie()
-{}
+{
+	std::cout << "Zombie is now destroyed." << std::endl;
+}
 
 // Methods
 void Zombie::announce()
